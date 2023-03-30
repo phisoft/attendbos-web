@@ -248,7 +248,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form">
+            <form action="mailto:example@yourmail.com?subject=New%20Message%20From%20Attendbos%20Website" method="post" class="php-email-form" enctype="text/plain" target="_blank" id="contact-form" >
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -263,7 +263,7 @@
 
                 <div class="col-md-12">
                   <p>Phone*</p>
-                  <input type="text" class="form-control" name="subject" placeholder="+60 123 4567" required>
+                  <input type="tel" class="form-control" name="phone" placeholder="+60 123 4567" required>
                 </div>
 
                 <div class="col-md-12">
@@ -281,6 +281,13 @@
 
               </div>
             </form>
+            <script>
+              document.getElementById('contact-form').addEventListener('submit', function() {
+                setTimeout(function() {
+                  document.getElementById("contact-form").reset();
+                }, 500); 
+              });
+            </script>
 
           </div>
 
