@@ -1030,7 +1030,6 @@ section {
 /*--------------------------------------------------------------
 # Call to Action
 --------------------------------------------------------------*/
-
 #cta {
   
   padding: 50px 0;
@@ -1095,6 +1094,8 @@ section {
 }
 
 .btn {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
@@ -1130,8 +1131,6 @@ section {
   background-color: #4e4e4e;
   color: #ffffff;
 }
-
-
 
 /*--------------------------------------------------------------
 # Contact
