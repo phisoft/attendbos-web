@@ -1028,6 +1028,111 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Call to Action
+--------------------------------------------------------------*/
+#cta {
+  
+  padding: 50px 0;
+}
+
+.cta-content {
+  background: linear-gradient(90deg, hsla(198, 57%, 48%, 1) 0%, hsla(204, 77%, 76%, 1) 100%);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.left-image {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  transform: rotate(10deg);
+}
+
+.right-image {
+  position: absolute;
+  bottom: -10px;
+  right: -50px;
+  transform: rotate(-10deg);
+}
+
+.cta-content h2 {
+  font-family: 'Arvo', serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-content .icon {
+  color: #4fbfa8;
+  margin-right: 10px;
+}
+
+.btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  margin: 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4e4e4e;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #4e4e4e;
+}
+
+.btn-secondary {
+  background-color: #f2f2f2;
+  color: #4e4e4e;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #4e4e4e;
+  color: #ffffff;
+}
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
