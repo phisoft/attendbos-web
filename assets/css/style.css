@@ -545,7 +545,6 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content {
-  background-color: #f6f9ff;
   width: 90%;
   max-height:450px;
   overflow:hidden;
@@ -554,6 +553,7 @@ section {
   position:relative;
   padding: 10px;
 }
+
 .about .content:before {
   content:'';
     width:100%;
@@ -608,6 +608,13 @@ section {
 .about .btn-read-more:hover i {
   transform: translateX(5px);
 }
+
+.about .static-image img {
+  border-radius: 10px;
+  width: 68%;
+  height: auto;
+}
+
 .about .flip-box {
   background-color: transparent;
   width: 700px;
