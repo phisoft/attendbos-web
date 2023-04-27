@@ -617,6 +617,7 @@ section {
   padding: 40px;
   transition: all 0.3s ease-in-out;
   margin-bottom: 30px;
+  padding-right: 90px;
 }
 
 .icon-box .icon {
@@ -674,10 +675,10 @@ section {
 
 
 .about .static-image img {
-  border-radius: 10px;
-  width: 90%;
-  height: 100%;
-  padding-left: 40px;
+  border-radius: 20px;
+  width: 88%;
+  height: auto;
+  padding-left: 5px;
 }
 
 
