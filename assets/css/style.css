@@ -771,168 +771,61 @@ section {
 /*--------------------------------------------------------------
 # issues
 --------------------------------------------------------------*/
-.issues .issue-box {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  height: 100%;
-  padding: 60px 30px;
-  text-align: center;
-  transition: 0.3s;
-  border-radius: 5px;
+.issues .container {
+	display: flex;
+	flex-direction: row;
 }
 
-.issues .issue-box .icon {
-  font-size: 36px;
-  padding: 40px 20px;
-  border-radius: 4px;
-  position: relative;
-  margin-bottom: 25px;
-  display: inline-block;
-  line-height: 0;
-  transition: 0.3s;
+.issues .left-column {
+	flex: 1;
 }
 
-.issues .issue-box h3 {
-  color: #444444;
-  font-weight: 700;
+.issues .right-column {
+	padding-left: 20px;
+	padding-right: 20px;
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-left: 1px solid #ccc;
+	border-radius: 0px 20px 20px 0px;
 }
 
-.issues .issue-box img {
-  margin-bottom: 10px;
+.issues .list {
+	list-style: none;
+	padding: 0;
 }
 
-.issues .issue-box .read-more {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 8px 20px;
+.issues .list-item {
+	cursor: pointer;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
 }
 
-.issues .issue-box .read-more i {
-  line-height: 0;
-  margin-left: 5px;
-  font-size: 18px;
+.issues .item {
+	display: none;
+	margin-top: 20px;
+	text-align: center;
 }
 
-.issues .issue-box.brown {
-  border-bottom: 3px solid #b15e0b;
+.issues .item.active {
+	display: block;
 }
 
-.issues .issue-box.brown .icon {
-  color: #b56a1f;
-  background: #ede8e2;
+.issues .image {
+	width: 200px;
+	height: auto;
+	margin-bottom: 10px;
 }
 
-.issues .issue-box.brown .read-more {
-  color: #b56a1f;
+.issues .item p {
+	margin: 0;
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 20px;
 }
 
-.issues .issue-box.brown:hover {
-  background: #b56a1f;
-  transform: scale(1.1);
-}
-
-.issues .issue-box.orange {
-  border-bottom: 3px solid #f68c09;
-}
-
-.issues .issue-box.orange .icon {
-  color: #f68c09;
-  background: #fde3c4;
-}
-
-.issues .issue-box.orange .read-more {
-  color: #f68c09;
-  transform: scale(1.1);
-}
-
-.issues .issue-box.orange:hover {
-  background: #f68c09;
-  transform: scale(1.1);
-}
-
-.issues .issue-box.green {
-  border-bottom: 3px solid #08da4e;
-}
-
-.issues .issue-box.green .icon {
-  color: #08da4e;
-  background: #cffddf;
-}
-
-.issues .issue-box.green .read-more {
-  color: #08da4e;
-}
-
-.issues .issue-box.green:hover {
-  background: #08da4e;
-  transform: scale(1.1);
-}
-
-.issues .issue-box.red {
-  border-bottom: 3px solid #e9222c;
-}
-
-.issues .issue-box.red .icon {
-  color: #e9222c;
-  background: #fef7f8;
-}
-
-.issues .issue-box.red .read-more {
-  color: #e9222c;
-}
-
-.issues .issue-box.red:hover {
-  background: #e9222c;
-  transform: scale(1.1);
-}
-
-.issues .issue-box.purple {
-  border-bottom: 3px solid #b50edf;
-}
-
-.issues .issue-box.purple .icon {
-  color: #b50edf;
-  background: #f8e4fd;
-}
-
-.issues .issue-box.purple .read-more {
-  color: #b50edf;
-}
-
-.issues .issue-box.purple:hover {
-  background: #b50edf;
-  transform: scale(1.1);
-}
-
-.issues .issue-box.pink {
-  border-bottom: 3px solid #f51f9c;
-}
-
-.issues .issue-box.pink .icon {
-  color: #f51f9c;
-  background: #feecf7;
-}
-
-.issues .issue-box.pink .read-more {
-  color: #f51f9c;
-}
-
-.issues .issue-box.pink:hover {
-  background: #f51f9c;
-  transform: scale(1.1);
-}
-
-.issues .issue-box:hover h3,
-.issues .issue-box:hover p,
-.issues .issue-box:hover .read-more {
-  color: #fff;
-}
-
-.issues .issue-box:hover .icon {
-  background: #fff;
-}
 
 /*--------------------------------------------------------------
 # Solution
