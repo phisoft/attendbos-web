@@ -771,6 +771,15 @@ section {
 /*--------------------------------------------------------------
 # issues
 --------------------------------------------------------------*/
+ .section-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+
 .issues .container {
 	display: flex;
 	flex-direction: row;
