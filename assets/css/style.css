@@ -789,8 +789,8 @@ section {
 .issues .left-column {
   flex: 1;
   padding: 20px;
-  
   border-radius: 20px 0px 0px 20px;
+  
 }
 
 .issues .list {
@@ -801,13 +801,23 @@ section {
 
 .issues .list-item {
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
   padding: 10px;
-  border: 1px solid #ccc;
   margin-bottom: 10px;
   border-radius: 10px;
+  display: flex;
+  align-items: center; /* vertical center alignment */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.list-item i {
+  font-family: 'Open Sans', sans-serif;
+  color: #4fbfa8;
+  font-size: 24px;
+  margin-right: 20px; /* add some gap between the icon and the text */
+  margin-top: 2px; /* adjust vertical alignment of the icon */
 }
 
 .issues .list-item:hover {
@@ -821,33 +831,33 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #ccc;
   border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.issues .right-column .image {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 70%;
 }
 
 .issues #item-details {
   margin-bottom: 20px;
 }
 
-.issues .item {
+.issues .right-column .item {
   display: none;
   margin-top: 20px;
   text-align: center;
 }
 
-.issues .item.active {
+.issues .right-column .item.active {
   display: block;
   background-color: #f7f7f7;
   font-weight: bold;
   border-left: 3px solid #2c3e50;
   padding-left: 10px;
-}
-
-.issues .image {
-  width: 350px;
-  height: auto;
-  margin-bottom: 10px;
-  
 }
 
 .issues .item p {
