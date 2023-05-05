@@ -25,6 +25,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -304,29 +306,55 @@
       </nav>
   
       <div class="description active" id="efficient-tracking">
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Automate attendance tracking using biometric or RFID technology to reduce errors and increase efficiency.</div>
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Provide employees with training on how to use the attendance tracking system correctly to minimize errors.</div>
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Offer an analytics module that identifies patterns and trends in attendance data, allowing for quick identification and resolution of any discrepancies.</div>
         <!--<h3>Efficient Tracking</h3><----->
-        <p>Automate attendance tracking using biometric or RFID technology to reduce errors and increase efficiency.<br><br>
-          Provide employees with training on how to use the attendance tracking system correctly to minimize errors.<br><br>
-          Offer an analytics module that identifies patterns and trends in attendance data, allowing for quick identification and resolution of any discrepancies.</p>
       </div>
+      
   
       <div class="description" id="access-control">
-        <h3>Access Control</h3>
-        <p>Description of the Access Control solution goes here.</p>
+        <!---<h3>Access Control</h3>--->
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Utilize a secure login system with strong password requirements to ensure only authorized personnel can access the attendance tracking system.</div>
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Implement role-based access control to restrict access to sensitive data based on job roles and responsibilities.</div>
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Utilize encryption to secure attendance data both in transit and at rest to protect against unauthorized access.</div>
       </div>
   
       <div class="description" id="real-time-tracking">
-        <h3>Real-time Tracking</h3>
-        <p>Description of the Real-time Tracking solution goes here.</p>
+        <!---<h3>Real-time Tracking</h3>--->
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Provide automated notifications to remind employees of their upcoming shift and encourage timely arrival.</div>
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Use GPS tracking or location-based services to detect when an employee is late and automatically update the attendance record.</div>
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Give managers real-time access to attendance data so they can address tardiness issues promptly.</div>
       </div>
   
       <div class="description" id="data-analytics">
-        <h3>Data Analytics</h3>
-        <p>Description of the Data Analytics solution goes here.</p>
+        <!--<h3>Data Analytics</h3>--->
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Provide a dashboard that allows managers to monitor attendance data and analytics in real-time, helping them identify trends and patterns.</div>
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Utilize machine learning algorithms to predict attendance patterns and identify potential issues before they become a problem.</div>
+        <div class="icon"><i class="bi bi-check-circle-fill"></i>Offer customizable reports and dashboards that enable managers to analyze attendance data and gain insights into specific areas of interest.</div>
       </div>
+      
   
     </div>
   </section>
+
+  <script>
+    // Find all nav buttons
+  var navButtons = $('.nav-button');
+  
+  // Add click event handler to each button
+  navButtons.click(function() {
+    // Remove active class from previously active button
+    navButtons.removeClass('active');
+    // Add active class to clicked button
+    $(this).addClass('active');
+    // Hide all descriptions
+    $('.description').removeClass('active');
+    // Show the description with the ID that matches the clicked button's data-target attribute
+    $('#' + $(this).data('target')).addClass('active');
+  });
+  
+   </script>
   
     <!-- End Solution Section --> 
     <!-- ======= Contact Section ======= -->
@@ -507,23 +535,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
- <script>
-  const itemDetails = document.getElementById('item-details');
-const listItems = document.querySelectorAll('.list-item');
-
-listItems.forEach((item) => {
-	item.addEventListener('click', () => {
-		// Get the name of the clicked item
-		const itemName = item.dataset.name;
-
-		// Find the corresponding item details in the right column
-		const itemDetail = document.querySelector(`.item[data-name="${itemName}"]`);
-
-		// Update the item details in the right column
-		itemDetails.innerHTML = itemDetail.innerHTML;
-	});
-}); </script>
 
 
 </body>

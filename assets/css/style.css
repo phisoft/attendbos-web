@@ -1042,10 +1042,10 @@ section {
 }
 
 .solution .light-blue {
-  background-color: #e6f7ff;
+  background-color: #fafbff;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 20px;
 }
 
 .solution .navigation {
@@ -1070,10 +1070,10 @@ section {
   border-radius: 10px;
   color: #888;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   opacity: 0.5; /* set default opacity to 0.5 */
-  padding: 10px 20px;
+  padding: 20px 40px;
   position: relative;
   transition: all 0.3s ease-in-out;
 }
@@ -1119,6 +1119,63 @@ section {
 .solution .description p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.solution .description .icon {
+  margin-bottom: 10px;
+  font-family: "Nunito", sans-serif;
+  
+}
+
+.solution .description .icon i {
+  color: #007bff;
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.description.active .icon:nth-child(2) {
+  border-radius: 10px;
+  background-color: #e1e7ff;
+}
+
+@media (max-width: 768px) {
+  .solution {
+    padding: 30px 0;
+  }
+
+  .solution .container {
+    padding: 0 15px;
+  }
+
+  .solution .light-blue {
+    padding: 15px;
+  }
+
+  .solution .navigation {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .solution .nav-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .solution .description h3 {
+    font-size: 20px;
+  }
+
+  .solution .description p {
+    font-size: 14px;
+  }
+
+  .solution .description .icon i {
+    font-size: 20px;
+  }
 }
 
 
