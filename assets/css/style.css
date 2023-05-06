@@ -449,7 +449,7 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: url(../img/attendbos-header/4.png) top center no-repeat;
   background-size: cover;
 }
 
@@ -1031,84 +1031,153 @@ section {
 /*--------------------------------------------------------------
 # Solution
 --------------------------------------------------------------*/
-.solution .content {
-  background-color: #f6f9ff;
-  width: 100%;
-  max-height:450px;
-  overflow:hidden;
-  text-overflow: ellipsis;
-  content: "";
-  position:relative;
-  padding: 10px;
-
-}
-.solution img {
-  width: 100%;
-  border-radius: 25px 100px 25px;
-}
-.solution .content:before {
-  content:'';
-    width:100%;
-    height:100%;    
-    position:absolute;
-    left:0;
-    top:0;
-    background:linear-gradient(transparent 350px, white);
+.solution {
+  padding: 50px 0;
 }
 
-.solution .content .icon {
-  /* box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08); */
-  font-size: 20px;
-  /* padding: 20px 20px; */
-  border-radius: 4px;
+.solution .container {
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
-  color: #3597C1;
-  /* margin-bottom: 20px; */
-  display: inline-block;
-  text-align: center;
-  line-height: 0;
-  transition: 0.3s;
 }
 
-.solution h2 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #3597C1;
-  text-transform: uppercase;
+.solution .light-blue {
+  background-color: #fafbff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-.solution p {
-  margin: 15px 0 30px 0;
-  line-height: 24px;
-}
-.solution .section-header {
-  margin-bottom: 50px;
-}
-.solution .solution-body {
-  text-align: center;
-  margin-left: 200px;
-  margin-right: auto;
+.solution .navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: #f0f0f0;
 }
 
-.solution .solution-box {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  height: 250px;
-  line-height: 0;
-  border-radius: 4px;
+
+.solution .nav-button i {
+  margin-right: 10px;
 }
 
-.solution .solution-box .icon {
-  /* box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08); */
-  font-size: 44px;
-  padding: 20px 20px;
-  border-radius: 4px;
-  /* position: relative; */
+.solution .nav-button {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  color: #888;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.5; /* set default opacity to 0.5 */
+  padding: 20px 40px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.solution .nav-button.active,
+.solution .nav-button:hover {
+  color: #000;
+  opacity: 1; /* set active button to full opacity */
+}
+
+.solution .nav-button.active:before,
+.solution .nav-button:hover:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.solution .nav-button.active:before {
+  transform: scaleX(1);
+}
+
+
+.solution .description {
+  display: none;
+}
+
+.solution .description.active {
+  display: block;
+  margin-top: 30px;
+}
+
+.solution .description h3 {
+  font-size: 24px;
   margin-bottom: 20px;
-  display: inline-block;
-  text-align: center;
-  line-height: 0;
-  transition: 0.3s;
 }
+
+.solution .description p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.solution .description .icon {
+  margin-bottom: 10px;
+  font-family: "Nunito", sans-serif;
+  
+}
+
+.solution .description .icon i {
+  color: #007bff;
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.description.active .icon:nth-child(2) {
+  border-radius: 10px;
+  background-color: #e1e7ff;
+}
+
+@media (max-width: 768px) {
+  .solution {
+    padding: 30px 0;
+  }
+
+  .solution .container {
+    padding: 0 15px;
+  }
+
+  .solution .light-blue {
+    padding: 15px;
+  }
+
+  .solution .navigation {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .solution .nav-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  .solution .description h3 {
+    font-size: 20px;
+  }
+
+  .solution .description p {
+    font-size: 14px;
+  }
+
+  .solution .description .icon i {
+    font-size: 20px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Team
