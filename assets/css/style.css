@@ -1602,10 +1602,10 @@ section {
 }
 
 .footer .footer-top .social-links a {
-  font-size: 20px;
+  font-size: 14px;
   display: inline-block;
   color: #3597C1;
-  line-height: 0;
+  line-height: 14px;
   margin-right: 10px;
   
   padding-bottom: 12px;
