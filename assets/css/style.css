@@ -1086,9 +1086,11 @@ section {
   font-size: 18px;
   font-weight: 600;
   opacity: 0.5; /* set default opacity to 0.5 */
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
+  padding: 20px;
   position: relative;
   transition: all 0.3s ease-in-out;
+  width: 90%;
 }
 
 .solution .nav-button.active,
@@ -1137,6 +1139,7 @@ section {
 .solution .description .icon {
   margin-bottom: 10px;
   font-family: "Nunito", sans-serif;
+  text-align: justify;
   
 }
 
@@ -1149,10 +1152,14 @@ section {
 
 .description.active .icon:nth-child(2) {
   border-radius: 10px;
-  background-color: #e1e7ff;
+  /* background-color: #e1e7ff; */
 }
 
 @media (max-width: 768px) {
+  .solution .row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .solution {
     padding: 30px 0;
   }
@@ -1176,6 +1183,7 @@ section {
     font-size: 16px;
     border-radius: 5px;
     margin-bottom: 30px;
+    width: 80%;
   }
 
   .solution .description h3 {
@@ -1189,9 +1197,60 @@ section {
   .solution .description .icon i {
     font-size: 20px;
   }
+  .solution img{
+    padding-bottom: 10px;
+  }
+  .solution .image-sol{
+    display: flex;
+    justify-content: center;
+    }
 }
 
+.solution img{
+  height: 600px;
+  border-radius: 20px;
+}
 
+.solution .image-sol{
+  height: 600px;
+  /* width: 80%; */
+  display: flex;
+  justify-content: center;
+  }
+
+  .solution .sect-des{
+    padding-left: 50px;
+    /* padding: 50px; */
+    padding-right: 50px;
+  }
+  @media(min-width: 768px) and (max-width: 992px) {
+    .solution .navigation {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    /* .solution .nav-button {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      color: #888;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      opacity: 0.5; set default opacity to 0.5
+      padding: 20px 40px;
+      padding: 20px;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      width: 90%;
+    } */
+  }
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1687,4 +1746,90 @@ section {
 
 .justify-content {
   text-align: justify;
+}
+
+/* chris new design solution */
+
+#chris-sol {
+  background: #fff;
+  padding: 60px 0 0 0;
+  overflow: hidden;
+}
+
+#chris-sol .features-img {
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media (min-width: 769px) {
+  #chris-sol .features-img {
+    padding-top: 120px;
+    margin-top: -200px;
+  }
+}
+
+#chris-sol .features-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#chris-sol .box {
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: rgb(250, 251, 255);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    padding: 20px;
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#chris-sol .icon {
+  margin-bottom: 10px;
+}
+
+#chris-sol .icon i {
+  color: #666666;
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+#chris-sol .icon i:before {
+  background: #1dc8cd;
+  /* background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%); */
+  background: linear-gradient(90deg, hsla(198, 57%, 48%, 1) 0%, hsla(204, 77%, 76%, 1));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#chris-sol .title {
+  font-weight: 300;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+#chris-sol .title a {
+  /* color: #3597C1; */
+  color: #53a8cd;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+#chris-sol .description {
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  /* margin-bottom: 0; */
+  padding: 0;
+  text-align: justify;
+  width: 80%;
+  display: center;
+}
+
+#chris-sol .section-description {
+  padding-bottom: 10px;
 }
