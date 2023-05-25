@@ -1833,3 +1833,74 @@ align-items: center;
 #chris-sol .section-description {
   padding-bottom: 10px;
 }
+
+/* Solution 2.0 Chris */
+
+.chris-sol-2 .nav .nav-link {
+  transition: .5s;
+  color: #3597C1;
+}
+.chris-sol-2 .nav .nav-link i{
+  transition: .5s;
+  color: #3597C1;
+}
+
+.chris-sol-2 .nav .nav-link.active {
+  color: #3597C1;
+}
+
+.chris-sol-2 .nav .nav-link.active h5 {
+  color: white;
+}
+
+.chris-sol-2 .nav .nav-link.active h5 i {
+  color: white !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #3597C1;
+}
+
+.chris-sol-2 h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #3597C1;
+  text-transform: uppercase;
+}
+.chris-sol-2 p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #1c7094;
+}
+
+.desc-chris-sol-2 {
+  display: flex;
+  background-color: rgb(250, 251, 255);
+  border-radius: 10px;
+  text-align: justify;
+  align-items: center;
+}
+.desc-chris-sol-2 .description {
+  text-align: left;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: justify;
+  width: 90%;
+  align-content: center;
+}
+
+.desc-chris-sol-2 .icon i{
+  color: #257da2;
+}
+
+.desc-chris-sol-2 .title{
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
