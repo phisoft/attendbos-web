@@ -926,6 +926,7 @@ section {
   margin-top: -20px;
   padding-left: 5px;
   height: 720px;
+  object-fit: cover;
 }
 
 
@@ -1066,6 +1067,7 @@ section {
   justify-content: space-between;
   margin-bottom: 30px;
   color: #f0f0f0;
+  flex-wrap: wrap;
 }
 
 
@@ -1083,14 +1085,13 @@ section {
   border-radius: 10px;
   color: #888;
   cursor: pointer;
-  font-size: 18px;
-  font-weight: 600;
   opacity: 0.5; /* set default opacity to 0.5 */
   /* padding: 20px 40px; */
   padding: 20px;
   position: relative;
   transition: all 0.3s ease-in-out;
-  width: 90%;
+  margin: 0px 10px 20px 0px;
+    width: 45%;
 }
 
 .solution .nav-button.active,
@@ -1180,11 +1181,11 @@ section {
   }
 
   .solution .nav-button {
-    padding: 10px 20px;
-    font-size: 16px;
+    /* padding: 10px 20px; */
+    /* font-size: 16px; */
     border-radius: 5px;
-    margin-bottom: 30px;
-    width: 80%;
+    margin-bottom: 20px;
+    width: 90%;
   }
 
   .solution .description h3 {
@@ -1210,6 +1211,7 @@ section {
 .solution img{
   height: 600px;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .solution .image-sol{
@@ -1223,8 +1225,19 @@ section {
 
   .solution .sect-des{
     padding-left: 50px;
-    /* padding: 50px; */
-    padding-right: 50px;
+  }
+  @media (max-width: 768px){
+    .solution img{
+      height: 600px;
+      width: 88%;
+    }
+    .solution .sect-des{
+      padding-right: 50px;
+    }
+    .section-header{
+      padding-top: 40px;
+    }
+
   }
   @media(min-width: 768px) and (max-width: 1199px) {
     .solution .navigation {
@@ -1233,26 +1246,17 @@ section {
       margin-bottom: 20px;
       overflow: hidden;
     }
+    .solution .image-sol{
+      height: 800px;
+      }
+    
+      .solution .image-sol img{
+        height: 800px;
+      }
 
-    /* .solution .nav-button {
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      font-family: 'Open Sans', sans-serif;
-      font-size: 18px;
-      font-weight: 600;
-      border: none;
-      border-radius: 10px;
-      color: #888;
-      cursor: pointer;
-      font-size: 18px;
-      font-weight: 600;
-      opacity: 0.5; set default opacity to 0.5
-      padding: 20px 40px;
-      padding: 20px;
-      position: relative;
-      transition: all 0.3s ease-in-out;
+      .solution .nav-button {
       width: 90%;
-    } */
+    }
   }
 /*--------------------------------------------------------------
 # Team
@@ -1749,161 +1753,4 @@ section {
 
 .justify-content {
   text-align: justify;
-}
-
-/* chris new design solution */
-
-#chris-sol {
-  background: #fff;
-  padding: 60px 0 0 0;
-  overflow: hidden;
-}
-
-#chris-sol .features-img {
-  text-align: center;
-  padding-top: 20px;
-}
-
-@media (min-width: 769px) {
-  #chris-sol .features-img {
-    padding-top: 120px;
-    margin-top: -200px;
-  }
-}
-
-#chris-sol .features-img img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-#chris-sol .box {
-  margin-bottom: 15px;
-  text-align: center;
-  background-color: rgb(250, 251, 255);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
-    padding: 20px;
-    display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-#chris-sol .icon {
-  margin-bottom: 10px;
-}
-
-#chris-sol .icon i {
-  color: #666666;
-  font-size: 40px;
-  transition: 0.5s;
-}
-
-#chris-sol .icon i:before {
-  background: #1dc8cd;
-  /* background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%); */
-  background: linear-gradient(90deg, hsla(198, 57%, 48%, 1) 0%, hsla(204, 77%, 76%, 1));
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#chris-sol .title {
-  font-weight: 300;
-  margin-bottom: 15px;
-  font-size: 22px;
-}
-
-#chris-sol .title a {
-  /* color: #3597C1; */
-  color: #53a8cd;
-  text-decoration: none;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 600;
-}
-
-#chris-sol .description {
-  text-align: left;
-  font-size: 14px;
-  line-height: 24px;
-  /* margin-bottom: 0; */
-  padding: 0;
-  text-align: justify;
-  width: 80%;
-  display: center;
-}
-
-#chris-sol .section-description {
-  padding-bottom: 10px;
-}
-
-/* Solution 2.0 Chris */
-
-.chris-sol-2 .nav .nav-link {
-  transition: .5s;
-  color: #3597C1;
-}
-.chris-sol-2 .nav .nav-link i{
-  transition: .5s;
-  color: #3597C1;
-}
-
-.chris-sol-2 .nav .nav-link.active {
-  color: #3597C1;
-}
-
-.chris-sol-2 .nav .nav-link.active h5 {
-  color: white;
-}
-
-.chris-sol-2 .nav .nav-link.active h5 i {
-  color: white !important;
-}
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-color: #3597C1;
-}
-
-.chris-sol-2 h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  margin: 0;
-  color: #3597C1;
-  text-transform: uppercase;
-}
-.chris-sol-2 p {
-  margin: 10px 0 0 0;
-  padding: 0;
-  font-size: 38px;
-  line-height: 42px;
-  font-weight: 700;
-  color: #1c7094;
-}
-
-.desc-chris-sol-2 {
-  display: flex;
-  background-color: rgb(250, 251, 255);
-  border-radius: 10px;
-  text-align: justify;
-  align-items: center;
-}
-.desc-chris-sol-2 .description {
-  text-align: left;
-  font-size: 20px;
-  line-height: 24px;
-  margin-bottom: 0;
-  padding: 0;
-  text-align: justify;
-  width: 90%;
-  align-content: center;
-}
-
-.desc-chris-sol-2 .icon i{
-  color: #257da2;
-}
-
-.desc-chris-sol-2 .title{
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 24px;
 }
